@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <style>
+        header{
+            display: flex;
+            color: #fff;
+            background-color: #000;
+            border-radius: 25px; 
+            width: 80vw;
+            margin-left: 150px; 
+                
+            
+        }
+       
+        .port{    
+            display: inline-block;              
+            text-transform:uppercase;                          
+            letter-spacing: 15px;              
+            font-size: larger;                       
+        }
+
+        nav{          
+           width: 100%;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+       nav ul li{
+        list-style: none;  
+        display: inline-block;          
+        }
+
+       ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase; 
+        font-size: small;
+        letter-spacing: 2px;              
+       }
+
+       @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;        
+      }
+
+      nav ul li {
+        margin: 1rem 0;
+        
+      }
+        }
+
+        ul:hover a:not(:hover){
+           opacity: .7;
+           transform: scale(.85);            
+           color: #000;
+           padding: 5px;
+           border-radius: 10px;
+        }
+
+a:hover{
+    background-color: #dede;
+    color: #000;
+    padding: 5px;
+    border-radius: 10px;
+}
+        img{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:98vw;
+            height: 100vh;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+        .intro{
+           position: absolute;
+           top:80px ;   
+           right: 150px;       
+           height: 100vh;
+           width: 50vw;
+           text-align: end;
+           align-content: center;
+        } 
+        .intro h1{
+            letter-spacing: 15px;
+            font-size: 100px;
+            text-shadow: 4px 10px 10px #000;
+            color: #dedede;
+            font-family: "Rubik Mono One", monospace;
+  font-weight: 700;
+  font-style: normal;
+        } 
+        .intro p{
+            text-align: end;
+            align-content: center;
+            letter-spacing: 1.5px;
+            font-size: large; 
+            
+            font-family: "Syne Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+        }
+        .nekha{
+            height: 100px;
+            width: 100px;
+        }
+
+        .container{
+            font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+
+            border: 2px soild red;
+            display: grid;            
+            gap: 5px;
+            justify-content: center;
+            align-content: center;
+            /*grid-template-columns: 50% 30% 20% ;*/
+            grid-template-areas: "mn mn mn"
+                                 "cn cn sbr"
+                                 "cn cn sbr" ;
+            
+
+        }
+        .box{
+            border: 2px solid green;
+            padding: 12px;
+        }
+        #box-1{                     
+            grid-area: mn; 
+           /* align-content: center;
+           justify-content: center; */
+           text-align: center;
+            
+        }
+        
+        
+        #box-2{
+           
+            grid-area: cn;
+            /* align-content: center;
+            justify-content: center; */
+             
+        }
+        #box-3{
+           
+            grid-area: sbr;
+            align-content: center;
+            justify-content: center;  
+        }
+        /*----------------------------------Professional Skills--------------------------------*/
+        .skill{
+   margin-left: 40px;
+    text-transform: uppercase;
+    width: 80vw;
+    margin:60px auto;
+    margin-top: 200px;
+    background-color: #000000;
+    color: #ffffff;
+    
+    padding: 20px;
+    list-style: none;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 20px;
+}
+
+.skill li{
+margin: 20px 0;
+padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition:all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(73, 71, 71, 0.25), 0 10px 10px rgba(73,71,71,0.22);
+ 
+}
+.bar span{
+    height: 20px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0, 140,1)0%, rgba(252, 103, 103,1)100%);
+}
+
+.html{
+    width: 90%;
+    animation-duration: html 3s;
+}
+.css{
+    width: 70%;
+    animation-duration: css 3s;
+}
+.javascript{
+    width: 67%;
+    animation-duration: javascript 3s;
+}
+.nodejs{
+    width: 60%;
+    animation-duration: nodejs 3s;
+}
+
+ @keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+ }
+
+ @keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+ }
+
+ @keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 67%;
+    }
+ }
+
+ @keyframes nodejs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+ }
+
+
+
+
+
+
+
+
+ /*--------------------contact---------------------------------*/
+ .cont{
+    text-align: center;
+ }
+ #contact_us{  
+    text-align: center;
+    display: flex;  
+    background-color: #000; 
+    color: #fff;  
+    width: 82vw; 
+    border-radius: 20px; 
+    margin-left: 135px;
+ }
+ form{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;   
+ }
+
+ label{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+   font-family: Impact,'Arial Narrow Bold', sans-serif;
+   letter-spacing: 2px;
+   font-family: cursive; 
+   margin: 10px;  
+ }
+ 
+
+ input{
+    width: 20vw;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 24px;
+    background-color: #000000;
+    box-shadow: 2px 2px 10px #fff inset;
+    border: none;
+ }
+ .inquiry{
+/*padding: 100px;*/
+width: 50vw;
+
+ }
+ .inquiry p{
+    color: #fff;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-align: center; 
+ }
+ #interest{
+    width: 22vw;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 24px;
+    background-color: #000000;
+    box-shadow: 2px 2px 10px #fff inset;
+    border: none;
+    color: #6d6a6a;    
+    letter-spacing: 2px;
+    
+
+ }
+ #message{
+    width: 21vw;
+    padding: 7px;
+    border-radius: 25px;
+    font-size: 24px;
+    background-color: #000000;
+    box-shadow: 2px 2px 10px #fff inset;
+    border: none;
+    color: #464343;
+ }
+ option{
+    color: #464343;
+ }
+ .submit{
+    width: 370.84px;
+ }
+ /*----------------contact details-------------------------*/
+ .contact_details{
+    color: #fff;
+    text-align: center;    
+    width: 50vw;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ h3{
+    letter-spacing: 2px;
+ }
+ p{
+    letter-spacing: 4px;
+ }
+
+/* Form Elements */
+
+
+
+/* ----------------------------------------------- */
+
+        .container{
+            margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap 2;        
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        }
+        .box{            
+            /* border: 2px solid red; */
+            padding: 12px;
+            height: 50%;
+            width:50%;
+            box-shadow: 4px 8px 8px #000;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            justify-content: center;
+            align-content: center;
+            background-color: #dede;
+            text-align: center;
+
+        }
+        .boximage img{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            box-shadow: 4px 8px 8px #000;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        @media (max-width:800px){
+            .container{                
+                flex-direction: column;
+            }
+            .box{            
+           
+            padding: 12px;
+            height: 50%;
+            width:90%;
+            margin-left: 5px;
+        }
+        .boximage img{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+        }
+        }
+
+        .box:hover {
+           opacity: 1;
+           transform: scale(.85);            
+           color: #000;
+           padding: 5px;
+           border-radius: 10px;
+           transition: 0.5s ease-in;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav>       
+         <ul> 
+             <li class="port">portfolio</li>           
+             <li><a href="#home">00&nbsp;Home</a></li>
+             <li><a href="#skills">01&nbsp;Skills</a></li>
+             <li><a href="#contact">02&nbsp;Contact</a></li>
+             <li><a href="#project">03&nbsp;project</a></li>
+         </ul>
+     </nav>
+ </header>
+    <div id="home">
+        <div>
+        <img src="RAMESH01.jpg" alt="ramesh img">
+        </div>
+        <div class="intro">
+        <h1>RAMESH</h1>
+        <p>A passionate <strong>Stack Software Developer</strong>  having a <br>experience of building Web and Mobile applications<br> JavaScript/ Reactjs/ Nodejs/ React Native <br>and some other cool libraries and frameworks.</p>
+        </div>
+    </div>
+
+<!------------------------------------>
+<div class="skill" >
+    
+    <li><h3>html</h3>
+      <span class="bar"><span class="html"></span>90%</span>
+    </li>
+    <li><h3>css</h3>
+        <span class="bar"><span class="css"></span>70%</span>
+      </li>
+      <li><h3>javascript</h3>
+        <span class="bar"><span class="javascript"></span>67%</span>
+      </li>
+      <li><h3>nodejs</h3>
+        <span class="bar"><span class="nodejs"></span>60%</span>
+      </li>
+
+   </div>
+
+
+<!------------------contact---------------------------->
+<h1 class="cont" id="contact">contact us</h1> 
+<section id="contact_us">
+     
+    <div class="inquiry">
+       <p>online inquiry</p>
+       <form>
+        <label for="name" ></label>
+        <input type="text" id="name" name="Name" placeholder="Name ">
+   
+        <label for="email" ></label>
+        <input type="email" id="email" name="email" placeholder="Email">
+    
+        <label for="phone" class="phone"></label>
+        <input type="text" id="phone" name="phone" placeholder="Phone Number">
+    
+        <label for="interest" class="interest"></label>
+        <select id="interest" name="country" >
+            <option value="" disabled selected >Select An interest</option>
+            <option value="web develpment">Web Development</option>
+            <option value="ceo">CEO</option>
+        </select>
+    
+        <label for="message"></label>
+        <textarea id="message"  placeholder="Message" ></textarea><br>
+        <input class="submit" type="submit" value="submit" style="color: #6d6a6a;text-transform: capitalize;">
+    </form>
+    </div>
+
+    <div class="contact_details" >
+        <h1 style="color: #fff;">CONTACT DETAILS</h1>        
+        <p>rameshbesra923@gmail.com<br>(908) 686-1200</p>        
+        
+        <h3>Jhanjharpur</h3>
+        <p>Ward No:11 <br>Near Ram Janki Mandir</p>
+
+        <h3>Summit</h3>
+        <p>357 Springfield Ave,<br>Short Hills, NJ 07701</p>
+
+        <h3>Short Hills Office</h3>
+        <p>549 Miliburn Ave,<br>Short Hills, NJ 07078 </p>
+    </div>
+
+    </section>
+
+<!-- ------------------------- -->
+<div class="container">
+    <div class="box" id="box-1">
+        <h1>Ramesh </h1>
+        <div class="boximage">
+            <img src="20230317_093039.jpg" alt="nekha">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quis, libero possimus exercitationem nesciunt dolorem nam nobis autem in porro numquam illum aliquid sed cumque, doloremque culpa atque! Labore, maxime?</p>
+    </div>
+
+
+    <div class="box" id="box-2">
+        <h1>Ramesh</h1>
+        <div class="boximage">
+            <img src="20220711_063337.jpg" alt="nekha">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quis, libero possimus exercitationem nesciunt dolorem nam nobis autem in porro numquam illum aliquid sed cumque, doloremque culpa atque! Labore, maxime?</p>
+    </div>
+
+
+    <div class="box" id="box-3">
+        <h1>Ramesh</h1>
+        <div class="boximage">
+            <img src="20230319_140807.jpg" alt="nekha">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quis, libero possimus exercitationem nesciunt dolorem nam nobis autem in porro numquam illum aliquid sed cumque, doloremque culpa atque! Labore, maxime?</p>
+    </div>
+
+
+    <div class="box" id="box-4">
+         <h1>Ramesh</h1>
+        <div class="boximage">
+            <img src="IMG_20230321_124634_578.jpg" alt="nekha">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quis, libero possimus exercitationem nesciunt dolorem nam nobis autem in porro numquam illum aliquid sed cumque, doloremque culpa atque! Labore, maxime?</p></div>
+</div>
+</body>
+</html>
